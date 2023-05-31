@@ -1,16 +1,27 @@
 <script>
 
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import HeaderApp from './components/HeaderApp.vue'
+import FooterApp from './components/FooterApp.vue'
 
 export default {
   components: {
-    HelloWorld
+    // HelloWorld,
+    HeaderApp,
+    FooterApp
   }
 }
 </script>
 
 <template>
-  <HelloWorld />
+  <div class="container">
+    <HeaderApp />
+
+    <main>
+      Contenuto da inserire
+    </main>
+    <FooterApp />
+  </div>
 </template>
 
 <style lang="scss">
