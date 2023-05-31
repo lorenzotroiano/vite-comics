@@ -2,12 +2,14 @@
 
 // import HelloWorld from './components/HelloWorld.vue'
 import HeaderApp from './components/HeaderApp.vue'
+import IconApp from './components/IconApp.vue'
 import FooterApp from './components/FooterApp.vue'
 
 export default {
   components: {
     // HelloWorld,
     HeaderApp,
+    IconApp,
     FooterApp
   }
 }
@@ -20,6 +22,8 @@ export default {
     <main>
       Contenuto da inserire
     </main>
+    <IconApp />
+
     <FooterApp />
   </div>
 </template>

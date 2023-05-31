@@ -43,9 +43,6 @@ nav {
         display: flex;
         justify-content: flex-end;
 
-
-        list-style: none;
-
         li a {
             &:hover {
                 color: $colorePrimario;
