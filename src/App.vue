@@ -16,16 +16,14 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <HeaderApp />
+  <HeaderApp />
 
-    <main>
-      Contenuto da inserire
-    </main>
-    <IconApp />
+  <main>
+    Contenuto da inserire
+  </main>
+  <IconApp />
 
-    <FooterApp />
-  </div>
+  <FooterApp />
 </template>
 
 <style lang="scss">

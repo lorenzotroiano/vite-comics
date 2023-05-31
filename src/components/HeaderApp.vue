@@ -2,37 +2,105 @@
 
 
 export default {
-    name: "HeaderApp"
+    name: "HeaderApp",
+    data() {
+        return {
+            links: [
+                {
+                    text: "Characters",
+                    link: "#"
+                },
+
+                {
+                    text: "Characters",
+                    link: "#"
+                },
+
+                {
+                    text: "Characters",
+                    link: "#"
+                },
+
+                {
+                    text: "Characters",
+                    link: "#"
+                },
+
+                {
+                    text: "Characters",
+                    link: "#"
+                },
+
+                {
+                    text: "Characters",
+                    link: "#"
+                },
+
+                {
+                    text: "Characters",
+                    link: "#"
+                },
+
+                {
+                    text: "Characters",
+                    link: "#"
+                },
+
+                {
+                    text: "Characters",
+                    link: "#"
+                },
+
+                {
+                    text: "Characters",
+                    link: "#"
+                }
+            ]
+        }
+
+    }
 }
 </script>
 
 <template>
-    <header>
-        <nav>
-            <div>
-                <img src="../assets/images/dc-logo.png" alt="logo">
-            </div>
+    <div class="container">
+        <header>
+            <nav>
+                <div>
+                    <img src="../assets/images/dc-logo.png" alt="logo">
+                </div>
 
-            <div>
-                <ul>
-                    <li><a href="#">Link N</a></li>
-                    <li><a href="#">Link N</a></li>
-                    <li><a href="#">Link N</a></li>
-                    <li><a href="#">Link N</a></li>
-                    <li><a href="#">Link N</a></li>
-                    <li><a href="#">Link N</a></li>
-                    <li><a href="#">Link N</a></li>
-                    <li><a href="#">Link N</a></li>
-                    <li><a href="#">Link N</a></li>
-                    <li><a href="#">Link N</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+                <div>
+                    <ul>
+                        <li><a href="#">Link N</a></li>
+                        <li><a href="#">Link N</a></li>
+                        <li><a href="#">Link N</a></li>
+                        <li><a href="#">Link N</a></li>
+                        <li><a href="#">Link N</a></li>
+                        <li><a href="#">Link N</a></li>
+                        <li><a href="#">Link N</a></li>
+                        <li><a href="#">Link N</a></li>
+                        <li><a href="#">Link N</a></li>
+                        <li><a href="#">Link N</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as *;
+
+.container {
+    background-color: white;
+}
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
 
 nav {
     display: flex;

@@ -8,77 +8,82 @@ export default {
 
 <template>
     <footer>
-        <div class="flex-principale">
-            <div class="flex-footer">
-                <section>
-                    <h3>DC Comics</h3>
-                    <ul>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                    </ul>
-                </section>
+        <div class="container-top">
+            <div class="flex-principale">
+                <div class="flex-footer">
+                    <section>
+                        <h3>DC Comics</h3>
+                        <ul>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                        </ul>
+                    </section>
 
-                <section>
-                    <h3>DC</h3>
-                    <ul>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                    </ul>
-                </section>
+                    <section>
+                        <h3>DC</h3>
+                        <ul>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                        </ul>
+                    </section>
 
-                <section>
-                    <h3>Sites</h3>
-                    <ul>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
+                    <section>
+                        <h3>Sites</h3>
+                        <ul>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
 
-                    </ul>
-                </section>
+                        </ul>
+                    </section>
 
-                <section>
-                    <h3>Shop</h3>
-                    <ul>
-                        <li>Ciao</li>
-                        <li>Ciao</li>
+                    <section>
+                        <h3>Shop</h3>
+                        <ul>
+                            <li>Ciao</li>
+                            <li>Ciao</li>
 
-                    </ul>
-                </section>
+                        </ul>
+                    </section>
+                </div>
+                <img src="../assets/images/dc-logo-bg.png" alt="">
             </div>
-            <img src="../assets/images/dc-logo-bg.png" alt="">
         </div>
 
-        <section class="flex-social">
-            <button>
-                <a href="#">Clicca qui</a>
-            </button>
+
+        <div class="container-bottom">
+            <section class="flex-social">
+                <button>
+                    <a href="#">Clicca qui</a>
+                </button>
 
 
-            <div>
-                <span>Follow Us</span>
-                <img src="../assets/images/footer-facebook.png" alt="">
-                <img src="../assets/images/footer-periscope.png" alt="">
-                <img src="../assets/images/footer-pinterest.png" alt="">
-                <img src="../assets/images/footer-twitter.png" alt="">
-                <img src="../assets/images/footer-youtube.png" alt="">
-            </div>
-        </section>
+                <div>
+                    <span>Follow Us</span>
+                    <img src="../assets/images/footer-facebook.png" alt="">
+                    <img src="../assets/images/footer-periscope.png" alt="">
+                    <img src="../assets/images/footer-pinterest.png" alt="">
+                    <img src="../assets/images/footer-twitter.png" alt="">
+                    <img src="../assets/images/footer-youtube.png" alt="">
+                </div>
+            </section>
+        </div>
 
 
     </footer>
@@ -87,10 +92,16 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as *;
 
+.container-top {
+    background-image: url(../assets/images/footer-bg.jpg);
+    background-repeat: no-repeat;
+}
 
 .flex-principale {
     display: flex;
     justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
 
     padding: 25px;
 
@@ -118,10 +129,18 @@ footer {
     background-position: center;
     background-size: cover;
 
+    .container-bottom {
+        background-color: #303030;
+    }
+
     .flex-social {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        width: 90%;
+        margin: 0 auto;
+
 
         padding: 15px;
         background-color: #303030;
