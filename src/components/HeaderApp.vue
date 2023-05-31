@@ -12,47 +12,47 @@ export default {
                 },
 
                 {
-                    text: "Characters",
+                    text: "Comics",
                     link: "#"
                 },
 
                 {
-                    text: "Characters",
+                    text: "Movies",
                     link: "#"
                 },
 
                 {
-                    text: "Characters",
+                    text: "Tv",
                     link: "#"
                 },
 
                 {
-                    text: "Characters",
+                    text: "Games",
                     link: "#"
                 },
 
                 {
-                    text: "Characters",
+                    text: "Collectibles",
                     link: "#"
                 },
 
                 {
-                    text: "Characters",
+                    text: "Videos",
                     link: "#"
                 },
 
                 {
-                    text: "Characters",
+                    text: "Fans",
                     link: "#"
                 },
 
                 {
-                    text: "Characters",
+                    text: "News",
                     link: "#"
                 },
 
                 {
-                    text: "Characters",
+                    text: "Shop",
                     link: "#"
                 }
             ]
@@ -71,17 +71,8 @@ export default {
                 </div>
 
                 <div>
-                    <ul>
-                        <li><a href="#">Link N</a></li>
-                        <li><a href="#">Link N</a></li>
-                        <li><a href="#">Link N</a></li>
-                        <li><a href="#">Link N</a></li>
-                        <li><a href="#">Link N</a></li>
-                        <li><a href="#">Link N</a></li>
-                        <li><a href="#">Link N</a></li>
-                        <li><a href="#">Link N</a></li>
-                        <li><a href="#">Link N</a></li>
-                        <li><a href="#">Link N</a></li>
+                    <ul v-for="link in links">
+                        <li><a :href="links.link">{{ link.text }}</a></li>
                     </ul>
                 </div>
             </nav>
@@ -107,7 +98,7 @@ nav {
     align-items: center;
     justify-content: space-between;
 
-    div>ul {
+    div {
         display: flex;
         justify-content: flex-end;
 

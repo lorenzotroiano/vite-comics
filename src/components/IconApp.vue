@@ -2,46 +2,52 @@
 
 
 export default {
-    name: "IconApp"
+    name: "IconApp",
+
+    data() {
+        return {
+            images: [
+                {
+                    text: "Digital Comics",
+                    image: "buy-comics-digital-comics.png"
+                },
+
+                {
+                    text: "Dc Merchendise",
+                    image: "buy-comics-merchandise.png"
+                },
+
+                {
+                    text: "Subscription",
+                    image: "buy-comics-shop-locator.png"
+                },
+
+                {
+                    text: "Comic Shop Locator",
+                    image: "buy-comics-subscriptions.png"
+                },
+
+                {
+                    text: "Dc Power Visa",
+                    image: "buy-dc-power-visa.svg"
+                }
+
+
+            ]
+        }
+
+    }
 }
 </script>
 
 <template>
     <div class="container">
         <section class="flex-icon">
-            <div class="flex-items">
+            <div v-for="image in images" class="flex-items">
                 <div>
-                    <img src="../assets/images/buy-comics-digital-comics.png" alt="">
+                    <img :src="image.image" alt="">
                 </div>
-                <span>Ciao</span>
-            </div>
-
-            <div class="flex-items">
-                <div>
-                    <img src="../assets/images/buy-comics-merchandise.png" alt="">
-                </div>
-                <span>Ciao</span>
-            </div>
-
-            <div class="flex-items">
-                <div>
-                    <img src="../assets/images/buy-comics-shop-locator.png" alt="">
-                </div>
-                <span>Ciao</span>
-            </div>
-
-            <div class="flex-items">
-                <div>
-                    <img src="../assets/images/buy-comics-subscriptions.png" alt="">
-                </div>
-                <span>Ciao</span>
-            </div>
-
-            <div class="flex-items">
-                <div>
-                    <img src="../assets/images/buy-dc-power-visa.svg" alt="">
-                </div>
-                <span>Ciao</span>
+                <span>{{ image.text }}</span>
             </div>
         </section>
     </div>

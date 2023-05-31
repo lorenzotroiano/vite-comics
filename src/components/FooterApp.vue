@@ -2,7 +2,40 @@
 
 
 export default {
-    name: "FooterApp"
+    name: "FooterApp",
+
+    data() {
+        return {
+            icons: [
+                {
+                    icon: "footer-facebook.png"
+                },
+
+                {
+
+                    icon: "footer-periscope.png"
+                },
+
+                {
+
+                    icon: "footer-pinterest.png"
+                },
+
+                {
+
+                    icon: "footer-twitter.png"
+                },
+
+                {
+
+                    icon: "footer-youtube.png"
+                }
+
+
+            ]
+        }
+
+    }
 }
 </script>
 
@@ -76,11 +109,7 @@ export default {
 
                 <div>
                     <span>Follow Us</span>
-                    <img src="../assets/images/footer-facebook.png" alt="">
-                    <img src="../assets/images/footer-periscope.png" alt="">
-                    <img src="../assets/images/footer-pinterest.png" alt="">
-                    <img src="../assets/images/footer-twitter.png" alt="">
-                    <img src="../assets/images/footer-youtube.png" alt="">
+                    <img v-for="icon in icons" :src="icon.icon" alt="">
                 </div>
             </section>
         </div>
