@@ -108,6 +108,9 @@ export default {
 
         </div>
 
+
+
+        <button><a href="#">Load More</a></button>
     </section>
 </template>
 
@@ -159,6 +162,21 @@ export default {
 
 
 
+    }
+
+    button {
+        background-color: $colorePrimario;
+        border: 0px solid;
+        padding: 10px;
+        width: 170px;
+        margin-bottom: 10px;
+        margin-left: 650px;
+
+
+        a {
+            color: white;
+            padding: 10px;
+        }
     }
 }
 </style>
