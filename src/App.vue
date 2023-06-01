@@ -4,13 +4,15 @@
 import HeaderApp from './components/HeaderApp.vue'
 import IconApp from './components/IconApp.vue'
 import FooterApp from './components/FooterApp.vue'
+import MainApp from './components/MainApp.vue'
 
 export default {
   components: {
     // HelloWorld,
     HeaderApp,
     IconApp,
-    FooterApp
+    FooterApp,
+    MainApp
   }
 }
 </script>
@@ -18,9 +20,7 @@ export default {
 <template>
   <HeaderApp />
 
-  <main>
-    Contenuto da inserire
-  </main>
+  <MainApp />
   <IconApp />
 
   <FooterApp />
